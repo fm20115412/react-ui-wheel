@@ -1,31 +1,17 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const p = require('path')
 module.exports = {
+    entry: './lib/index.tsx',
+    output:{
+        path:p.resolve(__dirname,'dist')
+    },
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
+                test: /\.tsx?$/,
                 use: {
-                    loader: "babel-loader"
+                    loader: "awesome-typescript-loader"
                 }
-            },
-            {
-                test: /\.html$/,
-                use: [
-                    {
-                        loader: "html-loader"
-                    }
-                ]
-            },
-            {
-                test: /\.(css|scss)$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
-    },
-    plugins :[
-        new HtmlWebPackPlugin({
-            template : './index.html'
-        })
-    ]
+    }
 };
