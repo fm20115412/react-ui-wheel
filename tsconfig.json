@@ -1,3 +1,21 @@
 {
-    
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "jsx": "react",
+        "declaration": true,
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": false,
+        "strict": true,
+        "experimentalDecorators": true,
+        "noErrorTruncation": true,
+        "baseUrl": ".",
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+    ]
 }
