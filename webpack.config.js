@@ -1,15 +1,13 @@
 const p = require('path')
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
     entry: {
         index: './lib/index.tsx'
     },
-    output:{
-        path:p.resolve(__dirname,'dist')
+    output: {
+        path: p.resolve(__dirname, 'dist')
     },
-    mode:'development',
-    resolve:{
-        extensions : ['.ts','.tsx','.js','.jsx']
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx']
     },
     module: {
         rules: [
@@ -21,10 +19,4 @@ module.exports = {
             }
         ]
     },
-    plugins:[
-        new HtmlWebPackPlugin({
-            template: './index.html'
-            //会使用根目录下的index.html作为模板
-        })
-    ]
 };

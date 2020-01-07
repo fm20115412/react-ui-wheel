@@ -2,19 +2,18 @@
   "name": "webpackdemo1",
   "version": "1.0.0",
   "description": "",
-  "main": ".lib/index.tsx",
+  "main": "dist/index.jx",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack --mode development",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --config webpack.config.dev.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "awesome-typescript-loader": "^5.2.1",

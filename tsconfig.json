@@ -14,7 +14,8 @@
         "experimentalDecorators": true,
         "noErrorTruncation": true,
         "baseUrl": ".",
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "outDir": "dist"
     },
     "exclude": [
     ]
