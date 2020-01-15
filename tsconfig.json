@@ -17,6 +17,9 @@
         "allowSyntheticDefaultImports": true,
         "outDir": "dist"
     },
+    "include": [
+        "lib/**/*"
+    ],
     "exclude": [
     ]
 }

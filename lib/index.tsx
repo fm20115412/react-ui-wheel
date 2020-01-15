@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './button'
+import Icon from './icon'
 
 ReactDOM.render(
-    <Button />,
+    <React.Fragment>
+        <Icon name='baidu' />
+        <Icon name='wechat' />
+    </React.Fragment>,
     document.getElementById('root')
 )
