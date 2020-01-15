@@ -1,16 +1,13 @@
 import React, { Props } from 'react';
-import './import'
-/* import './icons/baidu.svg';
-import './icons/wechat.svg'; */
-/* function Icon() {
-    
-} */
+import './import';
+import './icon.scss';
+
 interface IconProps {
     name: String
 }
 const Icon: React.FunctionComponent<IconProps> = (props) => {
     return (
-        <svg>
+        <svg className = 'icon'>
             <use xlinkHref={`#${props.name}`} style={{ 'fill': 'pink' }} />
         </svg>
     )
