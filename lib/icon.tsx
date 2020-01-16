@@ -1,14 +1,15 @@
 import React, { Props } from 'react';
 import './import';
 import './icon.scss';
+import mergeClassName from '../utils/mergeClassName'
 
-interface IconProps {
-    name: String
+interface IconProps extends React.SVGAttributes<SVGElement> {
+    name: string
 }
-const Icon: React.FunctionComponent<IconProps> = (props) => {
+const Icon: React.FunctionComponent<IconProps> = ({ name, className, ...rest }) => {
     return (
-        <svg className = 'icon'>
-            <use xlinkHref={`#${props.name}`} style={{ 'fill': 'pink' }} />
+        <svg className={mergeClassName('icon', className)} {...rest}>
+            <use xlinkHref={`#${name}`} />
         </svg>
     )
 }

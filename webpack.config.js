@@ -22,8 +22,12 @@ module.exports = {
                 loader: 'svg-sprite-loader',
             },
             {
-                test:/\.scss$/,
-                loader:['style-loader','css-loader','sass-loader']
+                test: /\.scss$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
+                ]
             }
         ]
     },

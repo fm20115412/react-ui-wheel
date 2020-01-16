@@ -4,8 +4,10 @@ import Icon from './icon'
 
 ReactDOM.render(
     <React.Fragment>
-        <Icon name='baidu' />
-        <Icon name='wechat' />
+        <Icon name='baidu' className='red-icon' onClick={() => { console.log('click') }} />
+        <Icon name='wechat' className='blue-icon' onMouseEnter={() => {
+            console.log('enter');
+        }} />
     </React.Fragment>,
     document.getElementById('root')
 )
