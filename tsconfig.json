@@ -14,13 +14,13 @@
         "experimentalDecorators": true,
         "noErrorTruncation": true,
         "baseUrl": ".",
-        "allowSyntheticDefaultImports": true,
+        // "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "outDir": "dist"
     },
     "include": [
         "lib/**/*",
         "utils/**/*"
     ],
-    "exclude": [
-    ]
+    "exclude": []
 }
