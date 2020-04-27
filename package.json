@@ -9,7 +9,7 @@
         "build": "webpack --config webpack.config.prod.js",
         "dev": "webpack --mode development --config webpack.config.dev.js",
         "start": "webpack-dev-server --config webpack.config.dev.js",
-        "ci": "JEST_JUNIT_OUTPUT_NAME=./test-results/jest/result.xml jest --config jest.config.js -u "
+        "ci": "JEST_JUNIT_OUTPUT_NAME=./test-results/jest/results.xml jest --config jest.config.js -u "
     },
     "author": "",
     "license": "ISC",
