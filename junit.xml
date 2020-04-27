@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" time="4.396">
+  <testsuite name="我的测试用例" errors="0" failures="0" skipped="0" timestamp="2020-04-27T10:24:58" time="1.978" tests="1">
+    <testcase classname="我的测试用例 1等于1" name="我的测试用例 1等于1" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="测试icon" errors="0" failures="0" skipped="0" timestamp="2020-04-27T10:24:58" time="2.03" tests="2">
+    <testcase classname="测试icon 这是个icon" name="测试icon 这是个icon" time="0.017">
+    </testcase>
+    <testcase classname="测试icon 它可以点击" name="测试icon 它可以点击" time="0.039">
+    </testcase>
+  </testsuite>
+</testsuites>
