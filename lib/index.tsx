@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import ReactDOM from 'react-dom';
 import Icon from './icon/icon'
 
@@ -11,3 +11,6 @@ ReactDOM.render(
     </React.Fragment>,
     document.getElementById('root')
 )
+ */
+
+export { default as Icon } from './icon/icon';

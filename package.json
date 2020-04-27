@@ -1,9 +1,12 @@
 {
-    "name": "webpackdemo1",
-    "version": "1.0.0",
+    "name": "fm_babybear_ui",
+    "version": "0.0.1",
     "description": "",
     "main": "dist/index.js ",
     "types": "dist/index.d.ts",
+    "files": [
+        "/dist"
+    ],
     "scripts": {
         "test": "jest --config jest.config.js",
         "build": "webpack --config webpack.config.prod.js",
@@ -11,7 +14,7 @@
         "start": "webpack-dev-server --config webpack.config.dev.js",
         "ci": "JEST_JUNIT_OUTPUT_NAME=./test-results/jest/results.xml jest --config jest.config.js"
     },
-    "author": "",
+    "author": "fm_babybear",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.4.5",
