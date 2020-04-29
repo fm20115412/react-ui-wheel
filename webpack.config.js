@@ -4,7 +4,8 @@ module.exports = {
         index: './lib/index.tsx'
     },
     output: {
-        path: p.resolve(__dirname, 'dist/lib')
+        path: p.resolve(__dirname, 'dist/lib'),
+        libraryTarget: 'umd'
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']

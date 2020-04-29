@@ -1,8 +1,9 @@
 {
     "name": "fm_babybear_ui",
-    "version": "0.0.6",
+    "version": "0.0.15",
     "description": "",
-    "main": "dist/index.js",
+    "main": "dist/lib/index",
+    "types": "dist/lib/index",
     "files": [
         "/dist"
     ],
