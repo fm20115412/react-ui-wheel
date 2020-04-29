@@ -20,7 +20,8 @@
     },
     "include": [
         "lib/**/*",
-        "utils/**/*"
+        "utils/**/*",
+        "jest.ci.config.js"
     ],
     "exclude": []
 }
