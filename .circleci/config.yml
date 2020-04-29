@@ -21,6 +21,15 @@ jobs:
           root: .
           paths:
             - node_modules
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: npm run ci
+      - store_test_results:
+          path: test-results
   build:
     <<: *defaults
     steps:
@@ -34,15 +43,6 @@ jobs:
             - dist
             - package.json
             - README.md
-  test:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run: npm run ci
-      - store_test_results:
-          path: test-results
   publish:
     <<: *defaults
     steps:
