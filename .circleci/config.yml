@@ -33,7 +33,6 @@ jobs:
           paths:
             - dist
             - package.json
-            - LICENSE
             - README.md
   test:
     <<: *defaults
@@ -44,6 +43,13 @@ jobs:
       - run: npm run ci
       - store_test_results:
           path: test-results
+  publish:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+      - run: npm publish
 
 workflows:
   version: 2
