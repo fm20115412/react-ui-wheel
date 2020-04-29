@@ -1,7 +1,7 @@
 import React, { Props } from 'react';
 import './import';
 import './icon.scss';
-import mergeClassName from '../../utils/mergeClassName'
+import mergeClassName from '../utils/mergeClassName'
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
     name: string

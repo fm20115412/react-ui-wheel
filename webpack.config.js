@@ -4,7 +4,7 @@ module.exports = {
         index: './lib/index.tsx'
     },
     output: {
-        path: p.resolve(__dirname, 'dist')
+        path: p.resolve(__dirname, 'dist/lib')
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx']

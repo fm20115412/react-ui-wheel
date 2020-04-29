@@ -16,12 +16,21 @@
         "baseUrl": ".",
         // "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "rootDir": ".",
     },
     "include": [
-        "lib/**/*",
-        "utils/**/*",
-        "jest.ci.config.js"
+        "lib/**/*"
     ],
-    "exclude": []
+    "exclude": [
+        "node_modules",
+        "build",
+        "dist",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts",
+        "*.js"
+    ]
 }
