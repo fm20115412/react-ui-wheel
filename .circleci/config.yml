@@ -56,17 +56,12 @@ workflows:
   build_accept_deploy:
     jobs:
       - prepare
-      - build:
-          requires:
-            - test
       - test:
           requires:
             - prepare
+      - build:
+          requires:
+            - test
       - publish:
           requires:
             - build
-          filters:
-            tags:
-              only: /^v[0-9]+(\.[0-9]+)*/
-            branches:
-              ignore: /.*/
