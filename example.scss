@@ -1,0 +1,29 @@
+.container {
+    header{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #79a47d;
+        padding-left: 20px;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px;
+        aside {
+            width: 15%;
+            border-right: 1px solid #79a47d;
+            ul {
+                padding: 10px;
+                margin: 0;
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+        main {
+            width: 85%;
+            padding: 10px;
+        }
+    }
+}
